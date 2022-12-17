@@ -202,7 +202,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ),
                 onTap: () {
                   try {
-                    launch(url);
+                    launchUrl(Uri.parse(url));
                   } catch (e) {
                     Fluttertoast.showToast(msg: e.toString());
                   }

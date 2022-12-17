@@ -128,7 +128,7 @@ class _ProfilesState extends State<Profiles> {
               ),
               onTap: () {
                 try {
-                  launch(url);
+                  launchUrl(Uri.parse(url));
                 } catch (e) {
                   Fluttertoast.showToast(msg: e.toString());
                 } 
